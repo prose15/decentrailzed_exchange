@@ -28,10 +28,10 @@ const TranscationHistory = () => {
     <div className="py-24">
     <div className="bg-gray-800 p-8 rounded-lg shadow-[#915EFF] shadow-2xl w-[50%] mx-auto">
    
-   {message.map(data => <div className="my-4 p-4 border-b border-white">   <p className="text-gray-400 flex justify-between mx-12">From : <p className="text-white ">{data.histories.asset_id_base}</p></p> 
-   <p className="text-gray-400 flex justify-between mx-12">To : <p className="text-white ">{data.histories.asset_id_quote}</p></p> 
-   <p className="text-gray-400 flex justify-between mx-12">Given amount : <p className="text-white">{data.amount}</p></p> 
-   <p className="text-gray-400 flex justify-between mx-12">You got : <p className="text-white">{data.result}</p></p> 
+   {message.map(data => <div className="my-4 p-4 border-b border-white">   <p className="text-gray-400 flex justify-between md:mx-12">From : <p className="text-white ">{data.histories.asset_id_base}</p></p> 
+   <p className="text-gray-400 flex justify-between md:mx-12">To : <p className="text-white ">{data.histories.asset_id_quote}</p></p> 
+   <p className="text-gray-400 flex justify-between md:mx-12">Given amount : <p className="text-white">{data.amount}</p></p> 
+   <p className="text-gray-400 flex justify-between md:mx-12">You got : <p className="text-white">{data.result}</p></p> 
    </div>)}
 
 </div>

@@ -54,11 +54,11 @@ const handleSwap = async () =>{
     <div className='bg-[#050816] h-screen'>
     <Nav/>
     <div className='flex flex-col my-20 justify-center items-center'>
-    <p id='hero' className='opacity-0 text-3xl text-white font-bold cursor-pointer'>Hello {name}, welcome to decentralized exchange</p>
+    <p id='hero' className='opacity-0 text-3xl text-white font-bold cursor-pointer mx-4'>Hello {name}, welcome to decentralized exchange</p>
     <div className='bg-gray-800 p-8 rounded-lg shadow-[#915EFF] shadow-2xl'>
     <p className='text-white'>No of coins to be exchange</p>
-    <div className='flex p-8 rounded-md my-4 bg-black shadow-sm shadow-[#915EFF]'>
-      <input type='number' value={amount} className='bg-black text-white border border-black' placeholder='0.0' onChange={(e)=>setAmount(e.target.value)}/>
+    <div className='flex p-8 rounded-md my-4 bg-black shadow-sm shadow-[#915EFF] w-12/12'>
+      <input type='number' value={amount} className='bg-black text-white border border-black w-[50%]' placeholder='0.0' onChange={(e)=>setAmount(e.target.value)}/>
       <select id='coins1' className='p-2 rounded-md  opacity-50 bg-gray-400' onChange={(e)=>setCoin1(e.target.value)}>
       <option value=''>select coin</option>
         <option value='BTC'>BITCOIN</option>
@@ -68,8 +68,8 @@ const handleSwap = async () =>{
       </select>
     </div>
     <p className='text-white'>What you will get</p>
-    <div className='flex p-8 rounded-md my-4 bg-black shadow-sm shadow-[#915EFF]'>
-      <input type='number' value={result} className='bg-black text-white border border-black' placeholder='0.0'/>
+    <div className='flex p-8 rounded-md my-4 bg-black shadow-sm shadow-[#915EFF] w-12/12'>
+      <input type='number' value={result} className='bg-black text-white border border-black w-[50%]' placeholder='0.0'/>
       <select id='coins2' className='p-2 rounded-md opacity-50 bg-gray-400' onChange={(e)=>setCoin2(e.target.value)}>
         <option value=''>select coin</option>
         <option value='BTC'>BITCOIN</option>
